@@ -18,27 +18,6 @@
 	|           index.ejs       // 入口模板文件
 	|
 	+---server                  // 服务器目录
-	|   |   app.js
-	|   |   package.json
-	|   |
-	|   +---bin
-	|   |       www
-	|   |
-	|   +---node_modules
-	|   |
-	|   +---public
-	|   |   +---images
-	|   |   +---javascripts
-	|   |   \---stylesheets
-	|   |           style.css
-	|   |
-	|   +---routes
-	|   |       index.js
-	|   |       users.js
-	|   |
-	|   \---views
-	|           error.ejs
-	|           index.ejs
 	|
 	\---tasks                   // 构建工具目录
 	    |
