@@ -7,7 +7,7 @@ es6 test of immoc
 
     cd server
 
-  2. **在当前目录下运行express脚手架工具创建ejs模板引擎**
+  2. **在当前目录(server)下运行express脚手架工具创建ejs模板引擎**
     
     express -e .
     
