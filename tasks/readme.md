@@ -15,3 +15,5 @@
 > **3. 安装依赖包**
 
     npm install gulp gulp-if gulp-concat webpack webpack-stream  vinyl-named  gulp-livereload gulp-plumber gulp-rename gulp-uglify gulp-util yargs --save-dev
+
+> **4. 创建gulp任务**

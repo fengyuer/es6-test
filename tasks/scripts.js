@@ -35,3 +35,46 @@ import {log,colors} from 'gulp-util'
 
 // 命令行参数进行解析的包
 import args from './util/agrs'
+
+// 创建gulp任务
+// .task为gulp的api，是创建一个任务，任务的名称为scripts
+gulp.task('scripts', ()=>{
+    return gulp.src(['app/js/index.js']) // 打开'app/js/index.js'文件
+
+        // 处理常规的错误逻辑
+        .pipe(plumber({
+            errorHandle:function(){
+
+            }
+        }))
+
+        // 文件重新命名
+        .pipe(named())
+
+        // webpack对js重新编译
+        .pipe(gulpwebpack({
+            module: {
+                loaders: [
+                    {
+                        test: /\.js$/,
+                        loader: 'babel'
+                    }
+                ]
+            }
+        }),null,(err) => { // 处理错误选项
+            log(`Finished '${colors.cyan('scripts')}'`,stats.toString({
+                chunks:false
+              }))
+            // log(`Finished '${colors.cyan('scripts)}'`,stats.toString({
+            //     chunks: false
+            // }))
+        })
+
+        // 编译完之后的文件放置的位置
+        .pipe(gulp.dest('server/public/js'))
+    
+
+
+
+})
+

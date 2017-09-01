@@ -1,4 +1,5 @@
 # 目录结构
+(tree /f /a >filelist.md)
 
     |   .babelrc                // 设置babel编译工具的文件
 	|                           // babel编译的时候自动会找这个文件,文件名不可更改（固定的）
@@ -9,8 +10,9 @@
 	+---app                     // 放置前端代码
 	|   +---css                 // css
 	|   +---js                  // js
-	|   |   \---class           // 类文件
-	|   |           index.js    // 入口文件
+	|   |   |   index.js			// 入口文件
+	|   |   |   
+	|   |   \---class				// 类文件
 	|   |           test.js
 	|   |
 	|   \---views               // 模板
