@@ -1,7 +1,6 @@
 // 引入yargs包 处理命令行参数
 import yargs from 'yargs'
 
-
 const args = yargs
 
 	// 区分开发环境与线上环境
