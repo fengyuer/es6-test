@@ -63,18 +63,30 @@ gulp.task('scripts', ()=>{
             }
         }),null,(err) => { // 处理错误选项
             log(`Finished '${colors.cyan('scripts')}'`,stats.toString({
-                chunks:false
-              }))
-            // log(`Finished '${colors.cyan('scripts)}'`,stats.toString({
-            //     chunks: false
-            // }))
+                chunks: false
+            }))
         })
 
         // 编译完之后的文件放置的位置
         .pipe(gulp.dest('server/public/js'))
-    
 
-
-
+        // 重命名
+        .pipe(rename({
+            basename: 'cp',
+            extname: '.min.js'
+        }))
+        // 压缩
+        .pipe(uglify({
+            compress:{
+                properties: false
+            },
+            output: {
+                'quote_key': true
+            }
+        }))
+        // 重新保存目录
+        .pipe(gulp.test('server/public/js'))
+        // 监听热更新
+        .pipe(gulpif(args.watch,livereload()))
 })
 
