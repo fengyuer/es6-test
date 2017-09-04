@@ -19,9 +19,11 @@
 > #### 4. 创建gulp任务-js编译任务脚本
 tasks/scripts.js
 
+```js
     gulp.task(name,() => {
         return gulp.src([path]).pipe()
     })
+```
 
 > #### 5. 创建模板任务脚本
 tasks/pages.js
