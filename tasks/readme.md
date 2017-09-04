@@ -36,3 +36,6 @@ tasks/server.js
 
 > #### 8. 文件自动监听（所有的任务自动完成）
 tasks/browser.js
+
+> #### .9 创建clean任务(清空指定目录文件)
+tasks/clean.js
