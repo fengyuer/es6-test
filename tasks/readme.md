@@ -43,3 +43,6 @@ tasks/clean.js
 > #### 10. 安装依赖包
 
     npm install gulp-live-server del --save-dev
+
+> #### 11. 把所有的任务串起来
+tasks/build.js
