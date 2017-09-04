@@ -17,11 +17,14 @@
     npm install gulp gulp-if gulp-concat webpack webpack-stream  vinyl-named  gulp-livereload gulp-plumber gulp-rename gulp-uglify gulp-util yargs --save-dev
 
 > **4. 创建gulp任务-js编译任务脚本**
-    scripts.js
+    tasks/scripts.js
 
     gulp.task(name,() => {
         return gulp.src([path]).pipe()
     })
 
 > **5. 创建模板任务脚本**
-    pages.js
+    tasks/pages.js
+
+> **6. 创建css任务脚本**
+    tasks/css.js
