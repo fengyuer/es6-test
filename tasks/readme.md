@@ -33,3 +33,6 @@ tasks/css.js
 
 > #### 7. 创建服务器脚本
 tasks/server.js
+
+> #### 8. 文件自动监听（所有的任务自动完成）
+tasks/browser.js
