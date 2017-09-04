@@ -39,3 +39,7 @@ tasks/browser.js
 
 > #### .9 创建clean任务(清空指定目录文件)
 tasks/clean.js
+
+> #### 10. 安装依赖包
+
+    npm install gulp-live-server del --save-dev
