@@ -23,11 +23,11 @@
         return gulp.src([path]).pipe()
     })
 
-### **5. 创建模板任务脚本**
+> ### 5. 创建模板任务脚本
     tasks/pages.js
 
 ### **6. 创建css任务脚本**
     tasks/css.js
 
-### **7. 创建服务器脚本**
+### 7. 创建服务器脚本
     tasks/server.js
