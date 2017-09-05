@@ -13,7 +13,7 @@ import contact from 'gulp-concat'
 import webpack from 'webpack'
 
 // gulp处理的是文件流,是基于stream的
-import gulpwebpack from 'webpack-stream'
+import gulpWebpack from 'webpack-stream'
 
 // 对文件重命名做标识
 import named from 'vinyl-named'
@@ -52,7 +52,7 @@ gulp.task('scripts', ()=>{
         .pipe(named())
 
         // webpack对js重新编译
-        .pipe(gulpwebpack({
+        .pipe(gulpWebpack({
             module: {
                 loaders: [
                     {
@@ -61,7 +61,7 @@ gulp.task('scripts', ()=>{
                     }
                 ]
             }
-        }),null,(err) => { // 处理错误选项
+        }),null,(err,stats) => { // 处理错误选项
             log(`Finished '${colors.cyan('scripts')}'`,stats.toString({
                 chunks: false
             }))
