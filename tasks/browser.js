@@ -1,5 +1,5 @@
 import gulp from 'gulp'
-import gulp from 'gulp-if'
+import gulpif from 'gulp-if'
 import gutil from 'gulp-util' // 函数集合
 import args from './util/args'
 

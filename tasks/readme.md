@@ -50,6 +50,9 @@ tasks/build.js
 > #### 12. default
 tasks/default.js
 
+    // 安装gulp-sequence
+    npm install gulp-sequence --save-dev
+
 > #### 12. 全局安装gulp
 
     npm install --global gulp

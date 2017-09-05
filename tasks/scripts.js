@@ -22,7 +22,7 @@ import named from 'vinyl-named'
 import livereload from 'gulp-livereload'
 
 // 管道拼接(处理文件信息流)
-import plumber from 'gulp-plumper'
+import plumber from 'gulp-plumber'
 
 // 对文件重命名
 import rename from 'gulp-rename'
@@ -34,7 +34,7 @@ import uglify from 'gulp-uglify'
 import {log,colors} from 'gulp-util'
 
 // 命令行参数进行解析的包
-import args from './util/agrs'
+import args from './util/args'
 
 // 创建gulp任务
 // .task为gulp的api，是创建一个任务，任务的名称为scripts
@@ -57,7 +57,7 @@ gulp.task('scripts', ()=>{
                 loaders: [
                     {
                         test: /\.js$/,
-                        loader: 'babel'
+                        loader: 'babel-loader'
                     }
                 ]
             }
