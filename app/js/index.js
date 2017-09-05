@@ -1,8 +1,2 @@
-class Test{
-    constructor(){
-        this.a = 'hello world!'
-    }
-}
-
-let test = new Test();
-document.body.innerHTML = test.a;
+// 入口文件
+import './class/l1.js'
