@@ -37,3 +37,12 @@ gulpfile.babel.js
 
     // 安装依赖包
     npm install babel-preset-es2015 --save-dev
+
+> ### 热更新配置
+
+    // 在server/app.js中添加如下代码:
+    // [必须放在app.use(express.static(path.join(__dirname, 'public')));后面]
+    app.use(require('connect-livereload')())
+
+    // 安装connect-livereload
+    npm install connect-livereload --save-dev
