@@ -46,3 +46,10 @@ tasks/clean.js
 
 > #### 11. 把所有的任务串起来
 tasks/build.js
+
+> #### 12. default
+tasks/default.js
+
+> #### 12. 全局安装gulp
+
+    npm install --global gulp
