@@ -81,11 +81,11 @@ gulp.task('scripts', ()=>{
                 properties: false
             },
             output: {
-                'quote_key': true
+                'quote_keys': true
             }
         }))
         // 重新保存目录
-        .pipe(gulp.test('server/public/js'))
+        .pipe(gulp.dest('server/public/js'))
         // 监听热更新
         .pipe(gulpif(args.watch,livereload()))
 })

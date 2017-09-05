@@ -20,7 +20,7 @@ es6 test of immoc
 
     npm install --global gulp
 
-# 项目构建
+# 项目构建测试
 
 > ### 安装babel依赖包
 

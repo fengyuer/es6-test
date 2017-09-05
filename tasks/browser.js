@@ -7,7 +7,7 @@ gulp.task('browser', (cb) => {
     if(!args.watch) return cb();
 
     // gulp.watch第一个参数是指定监听的目录，第二个是要执行的任务
-    gulp.watch('app/**/*.js',['script']);
+    gulp.watch('app/**/*.js',['scripts']);
     gulp.watch('app/**/*.ejs',['pages']);
     gulp.watch('app/**/*.css',['css']);
 
