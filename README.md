@@ -14,7 +14,7 @@ es6 test of immoc
     npm install
 
 # 构建工具目录
-详见tasks
+[详见tasks](./tasks)
 
 # 全局安装gulp
 
