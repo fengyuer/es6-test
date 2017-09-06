@@ -1,3 +1,4 @@
+/// let const命令
 function test(){
     // let a = 1;
     // console.log(a)
