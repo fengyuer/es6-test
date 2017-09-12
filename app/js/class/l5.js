@@ -123,3 +123,25 @@
     // Math.acosh(x) 返回x的反双曲余弦（inverse hyperbolic cosine）
     // Math.atanh(x) 返回x的反双曲正切（inverse hyperbolic tangent）
 }
+// 指数运算符 **
+{
+    console.log(2 ** 2)
+    console.log(Math.pow(2,2))
+    console.log(2 ** 3)
+    console.log(Math.pow(2,3))
+
+    let a = 1.5
+    a **= 2 // 等同于a = a * a
+    console.log(a)
+
+    let b = 4;
+    b **= 3 // 等同于b = b * b * b
+    console.log(b)
+
+    // 注意，在 V8 引擎中，指数运算符与Math.pow的实现不相同，对于特别大的运算结果，两者会有细微的差异。
+    console.log(Math.pow(99,99))
+    console.log(99 ** 99)
+
+    
+
+}
