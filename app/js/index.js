@@ -6,4 +6,5 @@
 // import './class/l4.js' // 字符串扩展
 // import './class/l5.js' // 数值扩展
 // import './class/l6.js' // 数组扩展
-import './class/l7.js' // 函数扩展
+// import './class/l7.js' // 函数扩展
+import './class/l8.js' // 对象扩展
