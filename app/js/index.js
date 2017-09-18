@@ -7,4 +7,5 @@
 // import './class/l5.js' // 数值扩展
 // import './class/l6.js' // 数组扩展
 // import './class/l7.js' // 函数扩展
-import './class/l8.js' // 对象扩展
+// import './class/l8.js' // 对象扩展
+import './class/l9.js' // symbol用法
