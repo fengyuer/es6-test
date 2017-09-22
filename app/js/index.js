@@ -8,4 +8,5 @@
 // import './class/l6.js' // 数组扩展
 // import './class/l7.js' // 函数扩展
 // import './class/l8.js' // 对象扩展
-import './class/l9.js' // symbol用法
+// import './class/l9.js' // symbol用法
+import './class/l10.js' // set-map
