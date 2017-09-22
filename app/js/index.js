@@ -1,12 +1,12 @@
 // 入口文件
-// import 'babel-polyfill'; // 兼容ie7
-// import './class/l1.js' // let const
-// import './class/l2.js' // 结构赋值
-// import './class/l3.js' // 正则的扩展
-// import './class/l4.js' // 字符串扩展
-// import './class/l5.js' // 数值扩展
-// import './class/l6.js' // 数组扩展
-// import './class/l7.js' // 函数扩展
-// import './class/l8.js' // 对象扩展
-// import './class/l9.js' // symbol用法
-import './class/l10.js' // set-map
+// import 'babel-polyfill';                 // 兼容ie7
+// import './class/L1 let const.js'         // let const
+// import './class/L2 DeconstructiveValuationofVariables .js'   // 结构赋值
+// import './class/L3 RegExp.js'            // 正则的扩展
+// import './class/L4 String.js'            // 字符串扩展
+// import './class/L5 Number.js'            // 数值扩展
+// import './class/L6  Array.js'            // 数组扩展
+// import './class/L7 Function.js'          // 函数扩展
+// import './class/L8 Object.js'            // 对象扩展
+// import './class/L9 Symbol.js'            // symbol用法
+import './class/L10 Set-map.js'             // set-map
