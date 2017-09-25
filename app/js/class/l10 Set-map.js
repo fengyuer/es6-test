@@ -162,4 +162,7 @@
     weakmap.set(o,123)
     console.log('weakmap---',weakmap)
 
+    // 无size属性
+    // 不能clear
+    // 无法遍历
 }
