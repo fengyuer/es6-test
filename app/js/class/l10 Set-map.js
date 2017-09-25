@@ -166,3 +166,103 @@
     // 不能clear
     // 无法遍历
 }
+
+
+// Map与Array的对比
+{
+    //  数据结构横向对比，增、删、改、查
+    let map =  new Map();
+    let arr = [];
+
+    // 增
+    map.set('t','1')
+    arr.push({'t':1})
+
+    console.info('array-map-add---',map,arr)
+
+    // 查
+    let mapExist = map.has('t')
+    let arrExist = arr.find(item => item.t)
+    console.info('array-map-find---',mapExist,arrExist)
+
+    // 改
+    map.set('t','2')
+    arr.forEach(item => item.t ?item.t = 2 : '')
+    console.info('array-map-modify---',map,arr)
+
+    // 删
+    map.delete('t')
+    let index = arr.findIndex(item => item.t)
+    arr.splice(index,1)
+    console.info('array-map-del---',map,arr)
+}
+
+// Set与Array的对比
+{
+    let set =  new Set();
+    let arr = []
+    // let o = {'s':1}
+
+    // 增
+    // set.add(o)
+    // arr.push(o)
+    set.add({'s':1})
+    arr.push({'s':1})
+    console.info('set-array-add---',set,arr)
+
+    // 查
+    // let setExist = set.has(o);
+    let setExist = set.has({'s':1});
+    let arrExist = arr.find(item => item.s)
+    console.log('set-array-find---',setExist,arrExist)
+
+    // 改
+    set.forEach(item => item.s ? item.s = 2 : '')
+    arr.forEach(item => item.s ? item.s = 2 : '')
+    console.log('set-array-modify---',set,arr)
+
+    // 删
+    set.forEach(item => item.s ? set.delete(item) : '')
+    let index = arr.findIndex(item => item.s)
+    arr.splice(index,1)
+    console.log('set-array-del---',set,arr)
+
+}
+
+// map,set,object对比
+{
+    
+    let item = {'t':1}
+    let map = new Map()
+    let set = new Set()
+    let obj = {}
+
+    // 增
+    map.set('t',1)
+    set.add(item)
+    obj['t'] = 1
+    console.log('map-set-object-add---',map,set,obj)
+
+    // 查
+    console.log({
+        mapExist: map.has('t'),
+        setExist: set.has(item),
+        objExist: 't' in obj
+    })
+
+    // 改
+    map.set('t',2)
+    item.t = 2;
+    obj['t'] = 2;
+    console.log('map-set-object-modify---',map,set,obj)
+
+    // 删
+    map.delete('t')
+    set.delete(item)
+    delete obj['t']
+    console.log('map-set-object-del---',map,set,obj)
+}
+
+// 总结：
+// 在整个数据开发中涉及数据结构 能使用map不使用数组
+// 如果对数据结构要求存储的唯一性，考虑使用set
